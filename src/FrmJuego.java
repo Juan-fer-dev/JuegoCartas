@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.WindowConstants;
@@ -70,6 +71,19 @@ public class FrmJuego extends JFrame {
     }
 
     private void btnVerificarClick(ActionEvent evt) {
+            int pestañaEscogida = tpJugadores.getSelectedIndex();
+        switch (pestañaEscogida) {
+            case 0:
+                JOptionPane.showMessageDialog(null, jugador1.GetGrupos());
+                break;
+
+            case 1:
+            JOptionPane.showMessageDialog(null, jugador2.GetGrupos());
+                break;
+        }
+      
+//        JOptionPane.showMessageDialog(null, );
+
     }
 
 }
