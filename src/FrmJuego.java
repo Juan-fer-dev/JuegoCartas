@@ -75,15 +75,16 @@ public class FrmJuego extends JFrame {
         switch (pestañaEscogida) {
             case 0:
                 JOptionPane.showMessageDialog(null, jugador1.GetGrupos());
+                JOptionPane.showMessageDialog(null, jugador1.GetEscaleras());
+                JOptionPane.showMessageDialog(null, jugador1.calcularPuntaje());
                 break;
 
             case 1:
             JOptionPane.showMessageDialog(null, jugador2.GetGrupos());
+            JOptionPane.showMessageDialog(null, jugador2.GetEscaleras());
+            JOptionPane.showMessageDialog(null, jugador2.calcularPuntaje());
                 break;
         }
-      
-//        JOptionPane.showMessageDialog(null, );
-
     }
 
 }
